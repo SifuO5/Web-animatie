@@ -1,0 +1,175 @@
+body {
+    margin: 0px;
+    overflow-y: hidden;
+    cursor: url(img/cursor.png), auto;
+    background-color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#sectie1 {
+    width: 700px;
+    height: 900px;
+    border-radius: 30px 0 0 30px;
+    background-color: #f5e8db;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+#sectie1 h1 {
+    font-size: 25em;
+    font-family: 'Teko', sans-serif;
+    color: #ff0037;
+    margin: 0;
+}
+
+#Layer_1 {
+    width: 700px;
+    position: relative;
+    margin-top: -200px;
+    margin-left: -20px;
+}
+
+#Layer_1 *{
+    fill: #000 !important;
+}
+
+#Layer_2 {
+    width: 700px;
+    position: relative;
+    margin-left: -20px;
+}
+
+#Layer_2 *{
+    fill: #ff0037 !important;
+}
+
+#Layer_3 {
+    width: 900px;
+    position: absolute;
+    bottom: 120px;
+    left: 50px;
+    pointer-events: none;
+    z-index: 4;
+}
+
+#Layer_3 *{
+    fill: #ff0037 !important;
+}
+
+#sectie1 h2 {
+    font-size: 25em;
+    font-family: 'Teko', sans-serif;
+    color: #000;
+    margin: 0;
+    margin-top: -280px
+}
+
+#sectie1 p {
+    font-size: 4em;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 30px;
+    line-height: 1em;
+    text-align: right;
+}
+
+#sectie1 div{
+    margin-top: 180px;
+    margin-left: 20px;
+}
+
+#sectie2 {
+    width: 1202px;
+    height: 900px;
+    border-radius: 0 30px 30px 0;
+/*    overflow: hidden;*/
+    position: relative;
+}
+
+@media (max-width: 2000px) {
+  #sectie2 {
+    width: 1000px;
+  }
+}
+
+
+#texture {
+    opacity: 10%;
+    mix-blend-mode: lighten;
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+
+#sectie2 h1 {
+    font-size: 30em;
+    font-family: 'Six Caps', sans-serif;
+    color: #ff0037;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    z-index: 1;
+    pointer-events: none;
+    margin: 0;
+    letter-spacing: -0px;
+}
+
+p {
+    font-size: 0.6em;
+    color: #ff0037;
+    font-family: 'Teko', sans-serif;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 900px;
+}
+
+.blokje {
+    margin: 10px;
+    border: 1.1px solid #333333;
+    border-radius: 90px;
+    height: 283px;
+    width: 283px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.grid-container .zwart div {
+    background-color: #f5e8db;
+    transform: translateY(0px);
+}
+
+.blokje div {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transform: translateY(300px);
+    transition: 0.5s;
+    color: #FFF;
+}
+
+.grid-container .blokje-tekst div {
+    background-color: #f5e8db;
+    font-size: 50px;
+    line-height: 1.0;
+    padding: 40px;
+}
