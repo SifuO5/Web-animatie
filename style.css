@@ -13,13 +13,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
-    width: 100%;
+    margin-top: 150px;
 }
 
 @media (max-width: 1000px) {
   main {
-    display: flex;
+    display: block;
   }
     body {
         overflow-x: scroll;
@@ -27,83 +26,75 @@ main {
 }
 
 #sectie1 {
-    min-width: 700px;
-    width: 700px;
-    height: 900px;
-    border-radius: 30px 0 0 30px;
+    width: 500px;
+    height: 650px;
+    border-radius: 20px 0 0 20px;
     background-color: #f5e8db;
-    margin-right: 20px;
+    margin-right: 10px;
     overflow-y: hidden;
     z-index: 10;
 }
 
-#sectie1 h1 {
-    font-size: 25em;
-    font-family: 'Teko', sans-serif;
-    color: #ff0037;
-    margin: 0;
+#sectie1 div{
+    margin-top: 100px;
+    margin-left: 20px;
 }
 
-#Layer_1 {
-    width: 700px;
+
+
+/*Buro 1*/
+#buro_1 {
+    width: 500px;
     position: relative;
-    margin-top: -295px;
+    margin-top: -170px;
     margin-left: -20px;
 }
 
-#Layer_1 *{
+#buro_1 *{
     fill: #000 !important;
 }
 
-#Layer_2 {
-    width: 700px;
+/*Buro 2*/
+#buro_2 {
+    width: 500px;
     position: relative;
     margin-left: -20px;
 }
 
-#Layer_2 *{
+#buro_2 *{
     fill: #ff0037 !important;
 }
 
-#Layer_3 {
-    width: 900px;
+/*Norm*/
+#norm {
+    width: 650px;
     position: absolute;
-    bottom: 95px;
+    bottom: 60px;
     left: 50px;
     pointer-events: none;
     z-index: 4;
 }
 
-#Layer_3 *{
+#norm *{
     fill: #ff0037 !important;
 }
 
-#sectie1 h2 {
-    font-size: 25em;
-    font-family: 'Teko', sans-serif;
-    color: #000;
-    margin: 0;
-    margin-top: -280px
-}
 
+/*Internationale*/
 #sectie1 p {
-    font-size: 3em;
+    font-size: 2em;
     position: absolute;
-    margin-left: 170px;
+    margin-left: 130px;
     margin-top: 30px;
     line-height: 1em;
     text-align: right;
     font-family: 'Oswald', sans-serif;
 }
 
-#sectie1 div{
-    margin-top: 180px;
-    margin-left: 20px;
-}
 
 #sectie2 {
-    width: 1202px;
-    height: 900px;
+    width: 900px;
+    height: 650px;
     border-radius: 0 30px 30px 0;
 /*    overflow: hidden;*/
     position: relative;
@@ -130,20 +121,6 @@ img {
     width: 100%;
 }
 
-
-#sectie2 h1 {
-    font-size: 30em;
-    font-family: 'Six Caps', sans-serif;
-    color: #ff0037;
-    position: absolute;
-    bottom: 10px;
-    left: 100px;
-    z-index: 1;
-    pointer-events: none;
-    margin: 0;
-    letter-spacing: -0px;
-}
-
 p {
     font-size: 0.6em;
     color: #ff0037;
@@ -154,15 +131,16 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    width: 900px;
+    width: 700px;
 }
 
 .blokje {
-    margin: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     border: 1.1px solid #333333;
-    border-radius: 90px;
-    height: 283px;
-    width: 283px;
+    border-radius: 50px;
+    height: 210px;
+    width: 210px;
     overflow: hidden;
     background-color: #000;
 }
