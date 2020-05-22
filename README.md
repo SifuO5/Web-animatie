@@ -11,3 +11,4 @@ Experimentele css: <br>
 Blend modes <br>
 Grid <br>
 Flexbox <br>
+Inherit <br>
