@@ -1,6 +1,6 @@
 # Web-animatie
 
-Het kunstwerk
+Het kunstwerk <br>
 De kleuren spraken mij aan
 Gaf een retro / bauhaus gevoel
 
