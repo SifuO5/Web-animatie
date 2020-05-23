@@ -2,7 +2,7 @@ body {
     margin: 0px;
     /*overflow-x: hidden;*/
     cursor: url(img/cursor.png), auto;
-    background-color: #000;
+    background-color: #171616;
 }
 
 * {
@@ -29,6 +29,7 @@ main {
     margin-right: 10px;
     overflow-y: hidden;
     z-index: 10;
+    box-shadow: 0px 22px 88px -30px rgba(0,0,0,0.75);
 }
 
 #sectie1 div {
@@ -37,6 +38,7 @@ main {
 }
 
 #sectie1 #texture1{
+    border-radius: 30px 0 0 30px;
     opacity: 30%;
     mix-blend-mode: color-burn;
     position: absolute;
@@ -129,6 +131,7 @@ main {
     z-index: 1;
     display: flex;
     overflow: hidden;
+    box-shadow: 0px 22px 88px -30px rgba(0,0,0,0.45);
 }
 
 #sectie2 #texture2 {
@@ -171,7 +174,7 @@ main {
 .blokje {
     margin-bottom: 10px;
     margin-right: 10px;
-    border: 1.1px solid #5e5e5e;
+    border: 0.0px solid #5e5e5e;
     border-radius: 30px;
     height: 210px;
     width: 210px;
@@ -182,9 +185,9 @@ main {
 .blokje div {
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     color: #FFF;
-    margin-top: 31px !important;
+    margin-top: 31px;
 }
 
 .blokje-tekst div {
@@ -192,7 +195,7 @@ main {
     font-size: 50px;
     line-height: 1.0;
     padding: 20px;
-    margin-top: 31px !important;
+    margin-top: 31px;
 }
 
 .blokje div img {
@@ -206,6 +209,7 @@ main {
 .animatie div {
     background-color: #f5e8db;
     transform: translateY(-243px);
+    opacity: 1 !important;
 }
 
 
@@ -268,14 +272,21 @@ main {
         height: 1520px;
     }
     .blokje div img {
-    width: 260px;
+        width: 245px;
+        margin-top: 5px;
+    }
+    .blokje-tekst div {
+        margin-top: 30px;
+        height: 250px;
+    }
+    .animatie div {
+        transform: translateY(-243px);
     }
     .up-icon {
         opacity: 1;
     }
     .blokje div {
-        margin-top: -213px;
-        pointer-events: none;
+        opacity: 0;
     }
     p {
         font-size: 0.6em;
