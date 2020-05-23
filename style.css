@@ -33,7 +33,7 @@ main {
     border: 2px solid #f5e8db;
     z-index: 0;
     left: 50%;
-    top: -730px;
+    top: -800px;
     opacity: 10%;
     transform: rotate(90deg);
 }
