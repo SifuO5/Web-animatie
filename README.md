@@ -12,3 +12,4 @@ Blend modes <br>
 Grid <br>
 Flexbox <br>
 Inherit <br>
+Custom cursor <br>
