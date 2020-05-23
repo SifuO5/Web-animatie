@@ -187,7 +187,6 @@ main {
     height: 100%;
     transition: 0.3s;
     color: #FFF;
-    margin-top: 31px;
 }
 
 .blokje-tekst div {
@@ -195,7 +194,7 @@ main {
     font-size: 50px;
     line-height: 1.0;
     padding: 20px;
-    margin-top: 31px;
+
 }
 
 .blokje div img {
@@ -208,7 +207,7 @@ main {
 /*Dit word toegevoegd*/
 .animatie div {
     background-color: #f5e8db;
-    transform: translateY(-243px);
+    transform: translateY(-212px);
     opacity: 1 !important;
 }
 
@@ -233,6 +232,7 @@ main {
 @media (max-width: 1400px) {
     main {
         display: block;
+        margin-bottom: 60px;
     }
     body {
         display: flex;
@@ -240,13 +240,15 @@ main {
     }
     #sectie1 {
         margin-top: -100px;
+        border-radius: 30px;
     }
     #sectie2 {
         display: block !important;
         overflow: hidden !important;
         margin-top: 50px;
         width: 500px;
-        height: 1600px;
+        height: 1520px;
+        border-radius: 30px;
     }
     grid-container-1 {
         overflow: none;
@@ -276,11 +278,10 @@ main {
         margin-top: 5px;
     }
     .blokje-tekst div {
-        margin-top: 30px;
         height: 250px;
     }
     .animatie div {
-        transform: translateY(-243px);
+        transform: translateY(-212px);
     }
     .up-icon {
         opacity: 1;
