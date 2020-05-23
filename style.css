@@ -2,7 +2,8 @@ body {
     margin: 0px;
     /*overflow-x: hidden;*/
     cursor: url(img/cursor.png), auto;
-    background-color: #171616;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
 }
 
 * {
@@ -13,10 +14,29 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 15vh;
 }
 
-
+#streep1 {
+    height: 1300px;
+    position: fixed;
+    width: 2px;
+    background-color: #f5e8db;
+    z-index: 0;
+    left: 30%;
+    opacity: 10%;
+}
+#streep2 {
+    height: 270%;
+    position: fixed;
+    width: 50px;
+    border: 2px solid #f5e8db;
+    z-index: 0;
+    left: 50%;
+    top: -730px;
+    opacity: 10%;
+    transform: rotate(90deg);
+}
 
 
 /*Sectie 1*/
@@ -24,7 +44,7 @@ main {
 #sectie1 {
     width: 500px;
     height: 650px;
-    border-radius: 30px 0 0 30px;
+    border-radius: 20px 0 0 20px;
     background-color: #f5e8db;
     margin-right: 10px;
     overflow-y: hidden;
@@ -33,28 +53,30 @@ main {
 }
 
 #sectie1 div {
-    margin-top: 100px;
-    margin-left: 20px;
+    overflow: hidden;
+    padding-top: 100px;
+    position: relative;
 }
 
 #sectie1 #texture1{
-    border-radius: 30px 0 0 30px;
+    border-radius: 20px 0 0 20px;
     opacity: 30%;
     mix-blend-mode: color-burn;
     position: absolute;
     pointer-events: none;
     z-index: 5;
-    margin-top: 0px;
+    margin-top: -100px;
     margin-left: 0px;
     width: inherit;
     overflow: hidden;
-    height: 650px;
+    height: 750px;
 }
 
 #sectie1 img {
     width: inherit;
-    height: inherit;
     overflow: hidden;
+    border-radius: 20px 0 0 20px;
+    height: 650px;
 }
 
 
@@ -64,19 +86,31 @@ main {
     width: 500px;
     position: relative;
     margin-top: -170px;
-    margin-left: -20px;
+    transition: all 1.2s ease-in-out;
+    
 }
 
 #buro_1 * {
     fill: #1c1c1c;
+    transition: all 1.2s ease-in-out;
+    
 }
 
 .rood * {
     fill: #ff1f1f !important;
+    transition: all 1.2s ease-in-out;
+    
+}
+
+.rood {
+    margin-top:56px !important;
+    transition: all 1.2s ease-in-out;
+    transform: scaleX(-1) rotate(180deg);
 }
 
 .zwart * {
     fill: #1c1c1c !important;
+    transition: all 1.2s ease-in-out;
 }
 
 /*Buro 2*/
@@ -84,17 +118,19 @@ main {
 #buro_2 {
     width: 500px;
     position: relative;
-    margin-left: -20px;
+    transition: all 0.2s ease-in-out;
+    margin-top: -1.2px;
 }
 
 #buro_2 * {
     fill: #ff1f1f;
+    transition: all 0.5s ease-in-out;
 }
 
 /*Norm*/
 
 #norm {
-    width: 650px;
+    width: 400px;
     position: absolute;
     bottom: 60px;
     left: 50px;
@@ -126,12 +162,15 @@ main {
 #sectie2 {
     width: 870px;
     height: 650px;
-    border-radius: 0 30px 30px 0;
+    border-radius: 20px;
     position: relative;
     z-index: 1;
     display: flex;
     overflow: hidden;
     box-shadow: 0px 22px 88px -30px rgba(0,0,0,0.45);
+/*    background-image: url(img/paper-horizontal.jpg);
+    background-size: 1200px;
+    backface-visibility: 10%;*/
 }
 
 #sectie2 #texture2 {
@@ -139,14 +178,39 @@ main {
     mix-blend-mode: color-burn;
     position: absolute;
     pointer-events: none;
-    z-index: 5;
+    z-index: 10;
     width: 870px;
     height: 650px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
 #sectie2 #texture2 img {
-    width: 960px
+    width: 960px;
+    border-radius: 20px;
+    height: 650px;
+    z-index: 1;
+}
+
+#sectie2 #texture3 {
+    opacity: 100%;
+    mix-blend-mode: normal;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    width: 870px;
+    height: 650px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #1c1c1c;
+}
+
+#sectie2 #texture3 img {
+    width: 960px;
+    border-radius: 20px;
+    height: 650px;
+    opacity: 40%;
+    z-index: 10;
 }
 
 #sectie2 p {
@@ -174,12 +238,13 @@ main {
 .blokje {
     margin-bottom: 10px;
     margin-right: 10px;
-    border: 0.0px solid #5e5e5e;
-    border-radius: 30px;
+    border: 0.5px solid #5e5e5e;
+    border-radius: 20px;
     height: 210px;
     width: 210px;
     overflow: hidden;
     opacity: 1;
+    z-index: 1;
 }
 
 .blokje div {
@@ -240,7 +305,10 @@ main {
     }
     #sectie1 {
         margin-top: -100px;
-        border-radius: 30px;
+        border-radius: 20px;
+    }
+    #sectie1 img {
+        border-radius: 20px;
     }
     #sectie2 {
         display: block !important;
@@ -248,7 +316,7 @@ main {
         margin-top: 50px;
         width: 500px;
         height: 1520px;
-        border-radius: 30px;
+        border-radius: #edd6d1;
     }
     grid-container-1 {
         overflow: none;
@@ -264,12 +332,12 @@ main {
         width: 245px;
         height: 245px;
     }
-    #sectie2 #texture2 {
+    #sectie2 #texture2, #sectie2 #texture3 {
         height: 1520px;
         width: 100%;
         overflow: hidden;
     }
-    #sectie2 #texture2 img{
+    #sectie2 #texture2 img, #sectie2 #texture3 img{
         width: 500px;
         height: 1520px;
     }
@@ -291,5 +359,8 @@ main {
     }
     p {
         font-size: 0.6em;
+    }
+    #streep1 {
+        margin-top: -150px;
     }
 }

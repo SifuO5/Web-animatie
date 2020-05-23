@@ -46,7 +46,5 @@ function veranderKleur() {
     buro1.classList.toggle("rood");
     buro2.classList.toggle("zwart");
 }
-
-
-
+document.onkeypress = veranderKleur;
 
