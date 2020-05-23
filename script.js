@@ -2,6 +2,9 @@ var blokjes = document.querySelectorAll('.blokje');
 var width = window.innerWidth;
 
 
+
+
+
 /*responsive buttons*/
 console.log(width);
 
@@ -47,4 +50,15 @@ function veranderKleur() {
     buro2.classList.toggle("zwart");
 }
 document.onkeypress = veranderKleur;
+blokjes.onkeypress = veranderKleur;
 
+if (width > 1400) {
+/*    var blokjeDiv = document.querySelectorAll('.blokje div');*/
+    blokjes.forEach(blokjeKlik => blokjeKlik.addEventListener("click", resize));
+
+    function resize(broodjeAap) {
+        console.log("hee22")
+        console.log(broodjeAap.currentTarget)
+        broodjeAap.currentTarget.classList.toggle("groter");
+    }
+}

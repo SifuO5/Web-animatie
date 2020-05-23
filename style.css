@@ -33,7 +33,7 @@ main {
     border: 2px solid #f5e8db;
     z-index: 0;
     left: 50%;
-    top: -800px;
+    top: -810px;
     opacity: 10%;
     transform: rotate(90deg);
 }
@@ -48,7 +48,7 @@ main {
     background-color: #f5e8db;
     margin-right: 10px;
     overflow-y: hidden;
-    z-index: 10;
+    z-index: 1;
     box-shadow: 0px 22px 88px -30px rgba(0,0,0,0.75);
 }
 
@@ -166,11 +166,7 @@ main {
     position: relative;
     z-index: 1;
     display: flex;
-    overflow: hidden;
     box-shadow: 0px 22px 88px -30px rgba(0,0,0,0.45);
-/*    background-image: url(img/paper-horizontal.jpg);
-    background-size: 1200px;
-    backface-visibility: 10%;*/
 }
 
 #sectie2 #texture2 {
@@ -245,6 +241,7 @@ main {
     overflow: hidden;
     opacity: 1;
     z-index: 1;
+    transition: 0.3s;
 }
 
 .blokje div {
@@ -265,6 +262,11 @@ main {
 .blokje div img {
     width: 207px;
     mix-blend-mode: color-burn;
+}
+
+.groter {
+    transform: scale(1.5) !important;
+    z-index: 21;
 }
 
 
