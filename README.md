@@ -2,6 +2,8 @@
 
 Het kunstwerk is gekozen uit de Phaidon scans.
 
+![Buro posters](https://user-images.githubusercontent.com/39334903/82763486-88301180-9e08-11ea-9d16-7efa4fbf78de.png)
+
 Er waren meerdere posters die mij aanspraken. Uiteindelijk heb ik gekozen voor deze poster. De kleuren spraken mij aan en het gaf een retro / bauhaus gevoel wat ik er gaaf uit vind zien.
 
 In de eerste instantie zag ik de drie posters als één geheel. Toen in inzag dat het drie aparte posters waren heb ik besloten om de eerste twee te combineren.
