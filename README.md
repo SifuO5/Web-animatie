@@ -12,7 +12,7 @@ De eerste interactie die ik heb bedacht is dat de blokjes op de tweede poster re
 
 Net als in de poster, staan in sommige blokes tekst. Het leek me leuk om stukjes content te verstoppen achter de blokjes. Ik heb ook een aantal afbeeldingen toegevoegd die passen bij de tentoonstelling waar de posters over gaat. 
 
-De tweede interactie heb ik bedacht op basis van feedback van medestudenten. De kleuren van de linker poster kunnen omgewisseld worden door er op te klikken of een willekeurige toest op het toetsenbord in te drukken. Deze animatie maakt gebruikt van easing.
+De tweede interactie heb ik bedacht op basis van feedback van medestudenten. De linker poster kan wisselen tussen twee layouts. Dit kan in actie gezet worden door op de linker poster te klikken of een willekeurige toest op het toetsenbord in te drukken. De animatie die speelt maakt gebruik van rotate, transform en color fill. Hierbij wordt easing gebruikt om de transitie soepel te laten lopen.
 
 Het kunstwerk is responsive en verandert de indeling van de posters naar een verticaal formaat zodra de breedtte van het scherm te krap wordt. Op mobiel wordt de hover vervangen door een tap. Om duidelijk te maken dat dit knoppen zijn heb ik kleine pijltjes toegevoegd die de luikjes open trekken.
 
